@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gioco - Thundrix-ElChess</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Thundrix-ElChess</h1>
+            <button id="back-btn" class="btn">Torna al Menu</button>
+            <button id="theme-toggle" class="btn">Tema: Scuro</button>
+        </header>
+        <div class="game-container">
+            <div class="sidebar">
+                <div class="player-info">
+                    <h3>Giocatore Bianco</h3>
+                    <p>Elisir: <span id="white-elixir">0</span></p>
+                    <div class="shop">
+                        <h4>Negozio</h4>
+                        <button class="shop-btn" data-piece="pawn" data-cost="1">Pedone (1)</button>
+                        <button class="shop-btn" data-piece="bishop" data-cost="3">Alfiere (3)</button>
+                        <button class="shop-btn" data-piece="knight" data-cost="3">Cavallo (3)</button>
+                        <button class="shop-btn" data-piece="rook" data-cost="4">Torre (4)</button>
+                        <button class="shop-btn" data-piece="queen" data-cost="5">Regina (5)</button>
+                    </div>
+                </div>
+                <div class="player-info">
+                    <h3>Giocatore Nero</h3>
+                    <p>Elisir: <span id="black-elixir">0</span></p>
+                    <div class="shop">
+                        <h4>Negozio</h4>
+                        <button class="shop-btn" data-piece="pawn" data-cost="1">Pedone (1)</button>
+                        <button class="shop-btn" data-piece="bishop" data-cost="3">Alfiere (3)</button>
+                        <button class="shop-btn" data-piece="knight" data-cost="3">Cavallo (3)</button>
+                        <button class="shop-btn" data-piece="rook" data-cost="4">Torre (4)</button>
+                        <button class="shop-btn" data-piece="queen" data-cost="5">Regina (5)</button>
+                    </div>
+                </div>
+                <button id="rotate-board" class="btn">Ruota Scacchiera</button>
+                <div id="turn-indicator">Turno: Bianco</div>
+            </div>
+            <div class="chessboard" id="chessboard">
+                <!-- La scacchiera sarà generata dinamicamente -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
